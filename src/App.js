@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+import AboutSection from "./components/AboutSection";
+import ProjectsSection from "./components/ProjectsSection";
+import EmailSection from "./components/EmailSection";
+import Footer from "./components/Footer";
+import AchievementsSection from "./components/AchievementsSection";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="flex min-h-screen flex-col bg-[#121212]">
+      <Navbar />
+      <div className="container mt-24 mx-auto px-12 py-4" style={{scrollBehavior:'smooth'}}>
+        <HeroSection />
+        <AchievementsSection />
+        <AboutSection />
+        <ProjectsSection />
+        <EmailSection />
+      </div>
+      <Footer />
+    </main>
   );
 }
 
