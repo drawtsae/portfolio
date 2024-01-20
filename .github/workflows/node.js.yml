@@ -32,4 +32,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: public # The branch the action will deploy to
           FOLDER: build # The folder the action will deploy to
-          TARGET-FOLDER: portfolio
+          CLEAN: true
